@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="legdev" />
     <title>Помощь психолога</title>
     <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
     <!-- Font Awesome icons (free version)-->
@@ -73,6 +73,9 @@
                 >Контакты</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blog">Статьи</a>
+            </li>
           </ul>
           <button
             style="margin-left: 3rem;"
@@ -99,6 +102,7 @@
             class="btn btn-info modal-open"
             data-toggle="modal"
             data-target="#exampleModalCenter"
+            style="font-size: 0.6em;"
           >
             Записаться на консультацию
           </button>
@@ -183,7 +187,7 @@
               class="btn btn-info modal-open marginRightSm"
               data-toggle="modal"
               data-target="#exampleModalCenter"
-              style="position: absolute; right: 0;"
+              style="position: absolute; right: 29%; font-size: 1.4em;"
             >
               Записаться на косультацию
             </button>
@@ -198,7 +202,7 @@
       id="portfolio"
       style="overflow-wrap: break-word;"
     >
-      <div class="container">
+      <div class="container" style="position: relative;">
         <div class="text-center">
           <h2 class="section-heading text-uppercase">
             За консультацией психолога ко мне обращаются если:
@@ -341,19 +345,15 @@
           </div>
         </div>
         <div class="row" style="margin: 3rem 0 0;">
-          <div
-            class="col-lg-8 mx-auto text-center"
-            style="position: absolute; right: 0;"
-          >
             <button
               type="button"
               class="btn btn-info modal-open"
               data-toggle="modal"
               data-target="#exampleModalCenter"
+              style="position: absolute; right: 14.7%; font-size: 1.4em;"
             >
               Записаться на косультацию
             </button>
-          </div>
         </div>
       </div>
     </section>
@@ -621,7 +621,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6 col-lg-4 col-md-4 text-center">
-                        <a href="tel:+380687007788" class="contacts-icons">
+                        <a href="https://telegram.me/380687007788" class="contacts-icons">
                         <img src="./assets/img/icons/contacts/2.png" alt="tel" />
                       </a>
                     </div>
@@ -641,7 +641,7 @@
                     </a>
                   </div>
                   <div class="col-sm-6 col-lg-4 col-md-4 paddingLeft text-center">
-                    <a href="https://wa.me/[номер]/?text=[текст]" class="contacts-icons">
+                    <a href="https://wa.me/380687007788" class="contacts-icons">
                       <img src="./assets/img/icons/contacts/6.png" alt="tel" />
                     </a>
                   </div>
@@ -671,6 +671,7 @@
                       class="btn btn-info modal-open"
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
+                      style="font-size: 1.2em;"
                     >
                       Записаться на косультацию
                     </button>
@@ -739,10 +740,10 @@
               </div>
               <div class="form-group">
                 <input
-                  type="text"
+                  type="email"
                   class="form-control"
                   id="email"
-                  placeholder="Почтовый адресс"
+                  placeholder="Email"
                 />
               </div>
               <div class="text-center">
@@ -761,7 +762,7 @@
           </div>
         </div>
           <!--    error toast   -->
-          <div class="toast" id="errorToast" style="position: absolute; bottom: 50px; right: 0;">
+          <div class="toast" id="errorToast" data-delay="4000" style="position: absolute; bottom: 50px; right: 0;">
               <div class="toast-header">
                   <strong class="mr-auto text-danger"><i class="fa fa-grav"></i>Пожалуйста, проверьте информацию</strong>
               </div>
@@ -770,7 +771,7 @@
               </div>
           </div>
         <!--    success toast  -->
-          <div class="toast" id="successToast" style="position: absolute; bottom: 50px; right: 0;">
+          <div class="toast" id="successToast" data-delay="4000" style="position: absolute; bottom: 50px; right: 0;">
               <div class="toast-header">
                   <strong class="mr-auto text-success">Мы приняли вашу заявку</strong>
               </div>

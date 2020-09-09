@@ -11,9 +11,26 @@ const sendEmail = functions.httpsCallable('sendEmail');
 $('#telephone').on('keypress', function (event) {
     event.preventDefault();
     const key = event.key;
-    if (key >= 'A' && key <= 'Z' || key >= 'a' && key <= 'z') {
-    } else {
+    if (/^[0-9.()\s-]*$/.test(key)) {
         telephoneInput.value = telephoneInput.value + key
+    }
+})
+
+// данная функция не даёт ввести в поле #name цифры
+$('#name').on('keypress', function (event) {
+    event.preventDefault();
+    const key = event.key;
+    if (!/^[0-9]*$/.test(key)) {
+        nameInput.value = nameInput.value + key
+    }
+})
+
+// данная функция не даёт ввести в поле #name цифры
+$('#email').on('keypress', function (event) {
+    event.preventDefault();
+    const key = event.key;
+    if (/^[a-zA-Z]*$/.test(key)) {
+        emailInput.value = emailInput.value + key
     }
 })
 

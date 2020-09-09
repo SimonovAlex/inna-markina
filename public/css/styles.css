@@ -10630,7 +10630,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 10rem;
+    padding-top: 14rem;
     padding-bottom: 29rem;
   }
   header.masthead .masthead-subheading {
@@ -11323,7 +11323,7 @@ blockquote {
 }
 
 .contacts-icons img {
-  width: 12rem;
+  width: 13.5rem;
   transition: 0.4s;
 }
 .contacts-icons img:hover {
@@ -11389,6 +11389,6 @@ blockquote {
 
 @media (max-width: 1600px) and (min-width: 992px){
   header.masthead {
-    padding-top: 6rem;
+    padding-top: 14rem;
   }
 }
