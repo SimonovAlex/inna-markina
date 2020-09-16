@@ -53,4 +53,22 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    $("#dip-header").click(function(){
+        const block = $(".dip-block");
+        if(block.css('display') == "none"){
+            block.css('display', 'flex');
+        }else{
+            block.css('display', 'none');
+        }
+    });
+
+    $("#blog-header").click(function(){
+        const block = $(".articles");
+        if(block.css('display') == "none"){
+            block.css('display', 'flex');
+        }else{
+            block.css('display', 'none');
+        }
+    });
 })(jQuery); // End of use strict

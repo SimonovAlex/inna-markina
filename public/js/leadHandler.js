@@ -29,7 +29,7 @@ $('#name').on('keypress', function (event) {
 $('#email').on('keypress', function (event) {
     event.preventDefault();
     const key = event.key;
-    if (/^[a-zA-Z]*$/.test(key)) {
+    if (!/^[а-яёА-ЯЁ]*$/.test(key)) {
         emailInput.value = emailInput.value + key
     }
 })
@@ -52,7 +52,7 @@ generateLeadForm.addEventListener('submit', (e) => {
             }).then(() => {
                 $("#successToast").toast('show');
             }).then(() => {
-                $('#exampleModalCenter').modal('hide');
+                setTimeout(() => $('#exampleModalCenter').modal('hide'), 3000);
             });
         } else {
             $("#errorToast").toast('show');

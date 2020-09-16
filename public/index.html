@@ -365,9 +365,9 @@
       <hr style="margin-top: 0; margin-bottom: 3rem;" />
       <div class="container" style="text-align: center;">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Дипломы</h2>
+          <h2 class="section-heading text-uppercase" id="dip-header">Дипломы</h2>
         </div>
-        <div class="row" style="overflow-wrap: break-word;">
+        <div class="row dip-block" style="overflow-wrap: break-word;">
           <div class="col-lg-8 col-sm-12 mb-12" style="margin-bottom: 1rem;">
             <h2>Диплом психолога и преподавателя психологии</h2>
             <div class="diplom-discription">
@@ -577,6 +577,27 @@
       </div>
     </section>
     <!-- </section> -->
+    <!-- Blog -->
+    <section class="page-section" id="blog">
+      <hr style="margin-top: 0; margin-bottom: 3rem;" />
+      <div class="container" style="text-align: center;">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase" id="blog-header">Статьи</h2>
+        </div>
+        <div class="articles">
+          <div class="article-blog">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam recusandae eveniet temporibus ut facilis, animi libero iusto suscipit asperiores voluptatibus dolorem hic consequatur possimus minima veniam eum est culpa?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam recusandae eveniet temporibus ut facilis, animi libero iusto suscipit asperiores voluptatibus dolorem hic consequatur possimus minima veniam eum est culpa?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam recusandae eveniet temporibus ut facilis, animi libero iusto suscipit asperiores voluptatibus dolorem hic consequatur possimus minima veniam eum est culpa?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam recusandae eveniet temporibus ut facilis, animi libero iusto suscipit asperiores voluptatibus dolorem hic consequatur possimus minima veniam eum est culpa?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat aperiam recusandae eveniet temporibus ut facilis, animi libero iusto suscipit asperiores voluptatibus dolorem hic consequatur possimus minima veniam eum est culpa?
+            </p>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <!-- Blog -->
     <hr style="margin-top: 0; margin-bottom: 3rem;" />
     <!-- Footer-->
     <footer class="new_footer_area bg_color" id="contacts">
@@ -762,23 +783,23 @@
           </div>
         </div>
           <!--    error toast   -->
-          <div class="toast" id="errorToast" data-delay="4000" style="position: absolute; bottom: 50px; right: 0;">
-              <div class="toast-header">
-                  <strong class="mr-auto text-danger"><i class="fa fa-grav"></i>Пожалуйста, проверьте информацию</strong>
-              </div>
-              <div class="toast-body text-primary">
-                  Введите имя, телефон или email
-              </div>
-          </div>
+          <div class="toast fade hide" id="errorToast" data-delay=3000 style="position: absolute; bottom: 5px; right: 0;">
+            <div class="toast-header">
+                    <strong class="mr-auto text-danger">Пожалуйста, проверьте информацию</strong>
+                  </div>
+                  <div class="toast-body text-primary">
+                    Введите имя, телефон или email
+            </div>
+          </div>          
         <!--    success toast  -->
-          <div class="toast" id="successToast" data-delay="4000" style="position: absolute; bottom: 50px; right: 0;">
-              <div class="toast-header">
+        <div class="toast fade hide" id="successToast" data-delay=3000 style="position: absolute; bottom: 5px; right: 0;">
+          <div class="toast-header">
                   <strong class="mr-auto text-success">Мы приняли вашу заявку</strong>
-              </div>
-              <div class="toast-body text-primary">
+                </div>
+                <div class="toast-body text-primary">
                   Ожидайте, в скором времени мы с вами свяжеммся
-              </div>
           </div>
+        </div>
       </div>
     </div>
     <!-- Portfolio Modals-->
