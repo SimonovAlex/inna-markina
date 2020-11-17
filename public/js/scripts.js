@@ -54,21 +54,45 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
 
-    $("#dip-header").click(function(){
+    function toggleDiplomBlock(){
         const block = $(".dip-block");
         if(block.css('display') == "none"){
             block.css('display', 'flex');
+            $('#diplom-line').removeClass('line-down').addClass('line-up');
+            $('#diplom-line').css('animation', 'arrow-up 1s infinite alternate');
         }else{
             block.css('display', 'none');
+            $('#diplom-line').removeClass('line-up').addClass('line-down');
+            $('#diplom-line').css('animation', 'arrow-down 1s infinite alternate');
         }
-    });
+    }
 
-    $("#blog-header").click(function(){
+    function toggleArticleBlock(){
         const block = $(".articles");
         if(block.css('display') == "none"){
             block.css('display', 'flex');
+            $('#article-line').removeClass('line-down').addClass('line-up');
+            $('#article-line').css('animation', 'arrow-up 1s infinite alternate');
         }else{
             block.css('display', 'none');
+            $('#article-line').removeClass('line-up').addClass('line-down');
+            $('#article-line').css('animation', 'arrow-down 1s infinite alternate');
         }
+    }
+
+    $("#dip-header").click(function(){
+        toggleDiplomBlock();
+    });
+    
+    $("#diplom-line").click(function(){
+        toggleDiplomBlock();
+    });
+
+    $("#blog-header").click(function(){
+        toggleArticleBlock();
+    });
+
+    $("#article-line").click(function(){
+        toggleArticleBlock();
     });
 })(jQuery); // End of use strict

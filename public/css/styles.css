@@ -4317,7 +4317,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 .navbar .container,
 .navbar .container-fluid,
@@ -10610,7 +10610,7 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  margin-top: 55px;
+  margin-top: 45px;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -11369,10 +11369,6 @@ blockquote {
         width: 60%;
     }
 
-    .marginRightSm{
-      margin-right: 20px;
-    }
-
   .lust-diplom {
     width: 100% !important;
     height: 95vh;
@@ -11471,6 +11467,52 @@ blockquote {
   width: 170px;
 }
 
+.line-arrow{
+  position: relative;
+  border: solid #17a2b8;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  animation: arrow-down 1s infinite alternate;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+.line-arrow:after{
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 40px;
+  transform: translateZ(-1px);
+}
+.line-down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: relative;
+  left: 49%;
+  top: -75px;
+}
+.line-up{
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  position: relative;
+  left: 49%;
+  top: -60px;
+}
+#about > .container{
+  position: relative;
+}
+.customButton{
+  position: absolute;
+  right: 14.7%;
+  bottom: -50px;
+  font-size: 1.4em;
+}
+
 @keyframes ufo{
   from{
     left: 240px;
@@ -11486,11 +11528,36 @@ blockquote {
   }
 }
 
+@keyframes arrow-down{
+  from{
+    top: -55px;
+  }
+  to{
+    top: -75px;
+  }
+}
+
+@keyframes arrow-up{
+  from{
+    top: -80px;
+  }
+  to{
+    top: -60px;
+  }
+}
+
 @keyframes go-back{
   from{
     color: #ffc400;
   }
   to{
     color: #ff5500;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn, .btn-info, .modal-open, .customButton{
+    margin: 0 auto;
+    position: initial;
   }
 }
