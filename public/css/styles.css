@@ -2764,11 +2764,21 @@ fieldset:disabled a.btn {
 .show > .btn-success.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
-
+.bq-wrapper{
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 35px 10px 10px 25px;
+  border-radius: 20px;
+  box-shadow: 7px 6px 12px #000000db;
+}
 .btn-info {
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
+}
+.main-button{
+  box-shadow: 7px 6px 12px #000000db;
+  position: relative;
+  top: 15px;
 }
 .btn-info:hover {
   color: #fff;
@@ -10956,7 +10966,6 @@ header.masthead .masthead-heading {
   }
 }
 .team-member {
-  margin-bottom: 3rem;
   text-align: center;
 }
 .team-member img {
@@ -11494,7 +11503,7 @@ blockquote {
   -webkit-transform: rotate(45deg);
   position: relative;
   left: 49%;
-  top: -75px;
+  top: -56px;
 }
 .line-up{
   transform: rotate(225deg);
@@ -11530,19 +11539,19 @@ blockquote {
 
 @keyframes arrow-down{
   from{
-    top: -55px;
+    top: -35px;
   }
   to{
-    top: -75px;
+    top: -50px;
   }
 }
 
 @keyframes arrow-up{
   from{
-    top: -80px;
+    top: -40px;
   }
   to{
-    top: -60px;
+    top: -25px;
   }
 }
 
@@ -11558,6 +11567,6 @@ blockquote {
 @media (max-width: 1200px) {
   .btn, .btn-info, .modal-open, .customButton{
     margin: 0 auto;
-    position: initial;
+    position: relative;
   }
 }
