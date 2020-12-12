@@ -55,6 +55,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  min-width: 300px;
 }
 
 article,
@@ -2630,6 +2631,15 @@ textarea.form-control.is-invalid {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 7px 6px 12px #000000db;
+}
+.header-btn{
+  box-shadow: none;
+}
+.footer-button{
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -10455,7 +10465,7 @@ p {
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .page-section h2.section-heading {
   margin-top: 0;
@@ -11386,6 +11396,16 @@ blockquote {
   .close-modal-last-diplome{
     z-index: 2;
   }
+  .masthead-subheading{
+    width: 50%;
+    font-size: 1em;
+    min-width: 300px;
+  }
+
+  .bq-wrapper p{
+    font-size: 0.8em !important;
+  }
+  
 }
 @media (min-width: 576px) and (max-width: 992px) {
     /* планшет   */
@@ -11399,6 +11419,16 @@ blockquote {
 
     #substrate{
         width: 60%;
+    }
+
+    .masthead-subheading{
+      width: 50%;
+      font-size: 1em;
+      min-width: 300px;
+    }
+
+    .bq-wrapper p{
+      font-size: 0.8em !important;
     }
 }
 
@@ -11518,7 +11548,7 @@ blockquote {
 .customButton{
   position: absolute;
   right: 14.7%;
-  bottom: -50px;
+  bottom: -30px;
   font-size: 1.4em;
 }
 
@@ -11568,5 +11598,9 @@ blockquote {
   .btn, .btn-info, .modal-open, .customButton{
     margin: 0 auto;
     position: relative;
+  }
+
+  .customButton{
+    right: initial;
   }
 }

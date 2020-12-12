@@ -90,7 +90,7 @@
           <button
             style="margin-left: 3rem;"
             type="button"
-            class="btn btn-info modal-open"
+            class="btn btn-info modal-open header-btn"
             data-toggle="modal"
             data-target="#exampleModalCenter"
           >
@@ -111,7 +111,7 @@
           </div>
           <button
             type="button"
-            class="btn btn-info modal-open"
+            class="btn btn-info modal-open main-button"
             data-toggle="modal"
             data-target="#exampleModalCenter"
             style="font-size: 0.6em;"
@@ -134,7 +134,7 @@
               class="about-photo"
             />
           </div>
-          <div class="col-lg-6 col-sm-12 col-md-12 align-middle">
+          <div class="col-lg-6 col-sm-12 col-md-12 align-middle" style="padding: 0px 1rem;">
             <h1 class="text-center">Обо мне</h1>
             <p>
               Меня зовут Инна Маркина. Я практикующий психолог, гештальт-терапевт, супервизор с опытом работы 17 лет. Психология — это моё призвание. 
@@ -532,20 +532,32 @@
                   visibility: visible;
                   animation-delay: 0.2s;
                   animation-name: fadeInLeft;
+                  text-align: center;
                 "
               >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.3626012142263!2d30.743182754525918!3d46.4781436826426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319e7ede3a09%3A0x1e781b4dba394f20!2z0JXQstGA0LXQudGB0LrQsNGPINGD0LsuLCA2LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!5e0!3m2!1sru!2sua!4v1591981226629!5m2!1sru!2sua"
-                  style="width: 100%;"
-                  height="350"
+                  style="width: 270px; border-radius: 50%;"
+                  height="270"
                   frameborder="0"
                   allowfullscreen=""
                   aria-hidden="false"
                   tabindex="0"
                 ></iframe>
+                <div class="col-md-8 col-sm-12 footer-button">
+                  <button
+                    type="button"
+                    class="btn btn-info modal-open"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                    style="font-size: 1.2em;"
+                  >
+                    Записаться на косультацию
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="col-lg-7 col-md-6">
+            <div class="col-lg-6 col-md-6">
               <div
                 class="f_widget about-widget pl_70 wow fadeInLeft"
                 data-wow-delay="0.6s"
@@ -576,11 +588,11 @@
                       <img src="./assets/img/icons/contacts/4.png" alt="tel" />
                     </a>
                   </div>
-                  <div class="col-sm-6 col-lg-4 col-md-4 paddingLeft text-center">
+                  <!-- <div class="col-sm-6 col-lg-4 col-md-4 paddingLeft text-center">
                     <a href="tel:+380687007788" class="contacts-icons">
                       <img src="./assets/img/icons/contacts/5.png" alt="tel" />
                     </a>
-                  </div>
+                  </div> -->
                   <div class="col-sm-6 col-lg-4 col-md-4 paddingLeft text-center">
                     <a href="https://wa.me/380687007788" class="contacts-icons">
                       <img src="./assets/img/icons/contacts/6.png" alt="tel" />
@@ -594,28 +606,18 @@
                     justify-content: space-around;
                     align-items: center;
                     text-align: center;
+                    margin-top: 20px;
                   "
                 >
                   <div class="col-md-4 col-sm-12">
                     <a href="tel:+380687007788" class="text-primary">
-                      (068) 700 77 88
+                      +38 (068) 700 77 88
                     </a>
                   </div>
-                  <div class="col-md-4 col-sm-12">
+                  <div class="col-md-5 col-sm-12">
                     <a href="mailto:trust@inna-markina.com" class="text-primary">
                       trust@inna-markina.com
                     </a>
-                  </div>
-                  <div class="col-md-4 col-sm-12">
-                    <button
-                      type="button"
-                      class="btn btn-info modal-open"
-                      data-toggle="modal"
-                      data-target="#exampleModalCenter"
-                      style="font-size: 1.2em;"
-                    >
-                      Записаться на косультацию
-                    </button>
                   </div>
                 </div>
               </div>
