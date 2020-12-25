@@ -10635,11 +10635,11 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/98.jpg");
+  background-image: url("../assets/img/main-img.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center top;
-  background-size: cover;
+  background-position: 85%;
+  background-size: contain;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11058,7 +11058,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .new_footer_top {
-  padding: 120px 0px 0px;
+  padding: 120px 0px 50px 0px;
   position: relative;
   overflow-x: hidden;
 }
