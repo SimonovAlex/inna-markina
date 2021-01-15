@@ -11376,10 +11376,6 @@ blockquote {
 
 @media (max-width: 576px) {
     /*  телефон */
-    blockquote{
-        width: 210px;
-    }
-
     .masthead-subheading > p{
         margin-right: 6em !important;
     }
@@ -11399,7 +11395,7 @@ blockquote {
   .masthead-subheading{
     width: 50%;
     font-size: 1em;
-    min-width: 300px;
+    min-width: 180px;
   }
 
   .bq-wrapper p{
@@ -11602,5 +11598,11 @@ blockquote {
 
   .customButton{
     right: initial;
+  }
+  header.masthead {
+    background-position: right;
+  }
+  .bq-wrapper{
+    display: none;
   }
 }
