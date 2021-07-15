@@ -7,22 +7,20 @@ exports.sendEmail = functions.https.onCall((req, res ) => {
     console.log('req', req);
 
     let transport = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
+        service: 'gmail',
         auth: {
-            user: "sasha130720@gmail.com",
-            pass: "ewsvwauxhocspoka"
+            user: "lkaluznyj@gmail.com",
+            pass: "fokkerd1999"
         }
     });
 
     const message = {
         to: "trust@inna-markina.com", // А тут адрес, куда его отправить
-        subject: 'this is new lead',
-        html: `<h1>this is new lead from site</h1>
-               <h2>Name: ${req.name}</h2>
-               <h2>phone: ${req.tel}</h2>
-               <h2>email: ${req.email}</h2>`
+        subject: 'Новая заявка с сайта inna-markina.com',
+        html: `<h1>Новая заявка с сайта inna-markina.com</h1>
+               <h2>Имя: ${req.name}</h2>
+               <h2>Телефон: ${req.tel}</h2>
+               <h2>Почта: ${req.email}</h2>`
     };
 
     transport.sendMail(message, (err, info) => {
